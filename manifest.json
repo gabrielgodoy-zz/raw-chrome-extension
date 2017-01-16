@@ -24,6 +24,9 @@
       ],
       "js": [
         "dist/content_script.js"
+      ],
+      "css": [
+        "dist/main.css"
       ]
     }
   ]

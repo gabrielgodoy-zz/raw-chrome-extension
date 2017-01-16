@@ -10,6 +10,7 @@
     "watch": "npm-watch",
     "start": "npm run webpack:dev",
     "webpack:dev": "webpack --config 'webpack.config.dev.babel.js'",
+    "build": "webpack --config 'webpack.config.prod.babel.js'",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint './src/**/*.js'",
     "precommit": "npm run lint",
