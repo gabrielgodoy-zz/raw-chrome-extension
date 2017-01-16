@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "Some Extension",
+  "description": "The description of the extension",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "src/assets/images/icons/icon.png"
+  },
+  "icons": {
+    "16": "src/assets/images/icons/icon16.png",
+    "48": "src/assets/images/icons/icon48.png",
+    "128": "src/assets/images/icons/icon128.png"
+  },
+  "permissions": [],
+  "background": {
+    "scripts": [
+      "dist/background.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "SOME_URL"
+      ],
+      "js": [
+        "dist/content_script.js"
+      ]
+    }
+  ]
+}
